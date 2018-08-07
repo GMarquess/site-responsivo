@@ -1,0 +1,20 @@
+{
+  "name": "Pogo",
+  "homepage": "https://github.com/GMarquess/site-responsivo",
+  "authors": [
+    "gabriel <gabriel.marques.silva@live.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
