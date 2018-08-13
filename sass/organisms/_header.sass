@@ -1,0 +1,76 @@
+header
+	+clearfix
+	min-height: 665px
+
+	
+	background: 
+		image: url("../images/slide_home.jpg")
+		position: center
+		repeat: no-repeat
+		attachment: fixed
+		size: cover
+		
+	.caixa
+		background: $branco
+		//width: 2580px
+		height: 80px 
+
+	.logo
+		float: left
+		margin-top: 15px
+		img
+			width: 170px
+			height: 50px
+
+	.links
+		float: right
+		margin-top: 30px
+
+		nav,
+		.social
+			display: inline-block
+
+
+		nav
+			+breakpoint($tablet)
+				display: none
+			+breakpoint($celular)
+				display: none
+			ul 
+				li 
+					display: inline-block
+					margin: 0 15px 0 0 
+					a 
+						color: $preto
+						text-transform: uppercase
+
+
+		.social
+
+			li
+				display: inline-block
+				margin: 0 5px 0 0
+				a 
+					color: $preto
+					display: block
+					border: 1px solid $preto
+					padding: 4px
+					width: 25px
+					height: 25px
+					line-height: 12px
+					text-align: center
+					+border-radius(120px)
+
+
+	
+	h1
+		clear: both
+		text-transform: uppercase
+		color: $branco
+		margin: 260px auto 30px auto !important
+		padding: 20px
+		text-align: center
+		+breakpoint($celular)
+			+font-size(40px)
+
+
