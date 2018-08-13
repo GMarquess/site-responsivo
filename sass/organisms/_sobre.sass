@@ -3,56 +3,64 @@ section.sobre
 		+flexbox
 		+align-items(center)
 		+justify-content(space-around)
-		margin: 50px 0
+		margin: 30px 0
 		text-align: center
 
-		+make-sm-column(10)
-		+make-sm-column-offset(1)
+		+make-sm-column(12)
 
 		+breakpoint($tablet)
 			display: block
 
-		.foto
-			+order(3)
-			+breakpoint($tablet)
-				margin: 0 0 30px
-
 		[class^="icone-"]
-			width: 90px
-			height: 90px
-			background-color: $azul-claro
+			width: 140px
+			height: 140px
+			border: 8px solid #E8E8E8
 			+border-radius(120px)
-			text-align: center
 			line-height: 85px
-			color: $branco
-			+font-size(55px)
+			color: $preto
+			img
+				display: block
+				margin: 20px auto
+				+breakpoint ($tablet)
+					display: inline-block
+					width: auto
+					height: 75px
+					line-height: 75px
+
 
 			+breakpoint($tablet)
+				border: 0px 
 				display: inline-block
 				width: 75px
 				height: 75px
 				line-height: 75px
 				+font-size(50px)
-				margin: 0 3px
+				margin: 0 5px
 
-			&.icone-lapis
+			&.icone-launcher
 				+order(1)
 
-			&.icone-codigo
+			&.icone-forms
 				+order(2)
 
-			&.icone-coracao
-				+order(4)
-
-			&.icone-compartilhar
-				+order(5)
+			&.icone-safety
+				+order(3)
 
 	.textos
 		+make-sm-column(8)
 		+make-sm-column-offset(2)
 		text-align: center
+		
+		h1
+			margin: 35px auto
+			+font-size(50px)
+			text-transform: uppercase
 		p 
-			+font-size(30px)
+			margin: 0px auto
+			+font-size (26px)
+			text-transform: uppercase
+
 		.botao
 			display: table
-			margin: 30px auto
+			margin: 250px auto 80px
+ 
