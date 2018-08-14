@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title> Pogo Enterprise </title>
 	<link rel="stylesheet" href="css/geral.css">
-	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/contato.css">
 	<link rel="stylesheet" href="css/pluggins.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
 							<li><a href="index.html">Inicio</a></li>
 							<li><a href="sobre.html">sobre</a></li>
 							<li><a href="clientes.html">parceiros</a></li>
-							<li><a href="contato.hmtl">contatos</a></li>
+							<li><a href="contato.html">contatos</a></li>
 						</ul>
 					</nav>
 						<ul class="social">
@@ -42,27 +42,52 @@
 				</div>
 			</div>	
 		</div>
-			<h1> Um Pouco Sobre nós </h1>
 
 	</header>
 
 	<main>
-		<section class="sobre">
+		<section class="contato">
 			<div class="container">
-				<div class="textos">	
-						
-						<h2><strong>quem somos ?</strong></h2>
-						<p>atuamos no mercado de mobilidade desde 2008, vizando trazer praticidade para as corporações integrarem seus processos e negócios ao mundo mobile.</p>
+				<form>
+					<div class="cols">
+						<div class="coll">
+							<div class="form-group">
+								<input type="text" placeholder="Nome" required>
+							</div>					
+						</div>
+						<div class="coll">
+							<div class="form-group">
+								<input type="email" placeholder="E-mail">
+							</div>
+						</div>	
+						<div class="coll">
+							<div class="form-group">
+								<input type="number" placeholder="Telefone">
+							</div>
+						</div>
+						<div class="coll">
+							<div class="form-group">
+								<select>
+									<option>Selecione uma Opção</option>
+									<option>Orçamento</option>
+									<option>Sugestão</option>
+									<option>Outras infos</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea cols="101" rows="5" placeholder="Digite aqui seu Texto"></textarea>
+					</div>
 
-						<h2><strong> Nossa Missão </strong></h2>
-						<p>é garantir a geração de valor e satisfações com os nossos clientes, tornando-nos seu parceiro preferido para a implantação de soluções ionovadoras de negócios voltadas á processos empresariais</p>
-						
-						<h2><strong> Visão </strong></h2>
-						<p> garantir o futuro de qualquer negócio, independente do seu porte, idade ou areá de atuação. negócios de sucesso são aqueles capazes de harmonizar seuas estratégias corporativas, implementando as ações necessarias com eficiência. nós iremos auxiliar nossos clientes a enxergar oportunidades para agregar valores ao seu negócio, superando suas expectativas.</p>
+					<div class="form-group">
+						<button class="botao medio">Enviar Contato</button>
+					</div>
 
-
-					 <a href="clientes.html" class="botao grande"> conheça nossos parceiros </a>
-				</div>
+					<p class="bg-success">Seu contato foi enviado com sucesso.</p>
+					<p class="bg-danger">preencha todos os campos obrigatórios.</p>
+					
+				</form>
 			</div>
 		</section>
 	</main>

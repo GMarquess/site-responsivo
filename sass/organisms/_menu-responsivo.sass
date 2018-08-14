@@ -1,0 +1,84 @@
+body
+	position: relative
+
+.menu-responsivo
+	position: fixed
+	width: 100%
+	height: 210px
+	left: 0
+	top: -220px
+	+transition(.2s)
+	&.ativo
+		top: 0
+	
+
+	ul 
+		li
+			border-bottom: 1px solid #A9A9A9
+			a 
+				font-size: 80%
+				padding: 15px
+				display: block
+				color: $preto
+				text-transform: uppercase
+				margin-top: 5px 
+				text-align: left
+				
+				&:hover,
+				&:focus
+					background-color: rgba($preto, .4)
+
+
+.layout
+	+transition(.2s)
+	&.ativo
+		+transition(.2s)
+		padding-top: 202px
+		
+.toggle
+	width: 30px
+	height: 30px
+	float: right
+	position: relative
+	overflow: hidden
+	margin: 0 12px
+	display: none
+	+breakpoint($tablet)
+		display: block
+	+breakpoint($celular)
+		display: block
+
+	&.ativo
+		span
+			width: 15px
+			height: 3px
+
+			&:nth-child(1)
+				+rotate(49deg)
+				top: 12px
+			&:nth-child(3)
+				+rotate(133deg)
+				top: -2px 
+			&:nth-child(2)
+				display: none
+
+	span
+		width: 30px
+		height: 3px
+		content: " "
+		display: block
+		background-color: $preto
+		postion: absolute
+		left: 0
+		+transition(.2s)
+
+		&:nth-child(1)
+			margin-top: 8px 
+
+		&:nth-child(2)
+			margin-top: 6px
+
+		&:nth-child(3)
+			margin-top: 6px
+
+

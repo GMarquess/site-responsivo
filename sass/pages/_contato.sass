@@ -1,0 +1,51 @@
+@import molecules/textos
+
+header
+	min-height: 665px
+	margin: 0 0 25px
+
+	background:
+		image: url("../images/slide_solucoes.jpg")
+		position: top center
+		repeat: no-repeat
+
+.contato
+	
+	form
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		
+		.cols 
+			+make-row
+
+		.coll
+			+make-sm-column(6)
+
+		input,
+		select,
+		textarea
+			width: 100%
+			border: 3px solid $cinza-claro
+			padding: 7px
+			text-transform: uppercase
+			+transition(.3s)
+
+			&:hover,
+			&:focus
+				border-color: $azul-claro
+
+		select
+			heigth: 37px
+				
+
+		button
+			background-color: transparent
+			display: table
+			margin: 0 auto
+		
+		.bg-success,
+		.bg-danger
+			padding: 7px
+			text-transform: uppercase
+

@@ -9,79 +9,109 @@
 	<link rel="stylesheet" href="css/pluggins.css">
 </head>
 <body>
-	<header>
-		<div class="caixa">
-			<div class="container">				
-				<div class="logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="logo topo">
-					</a>
-				</div>
-				<div class="links">
-					<nav>
-						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="sobre.html">sobre</a></li>
-							<li><a href="clientes.html">parceiros</a></li>
-							<li><a href="contato.html">contatos</a></li>
-						</ul>
-					</nav>
-						<ul class="social">
-							<li>
-								<a href="https://www.facebook.com/pogoenterprise/">
-									<img src="images/logo_face.svg" alt="">
-								</a>
-							</li>
-
-						<li>
-							<a href="">
-								<img src="images/logo_insta.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>	
+		<div class="layout">
+			<nav class="menu-responsivo">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="sobre.html">sobre</a></li>
+					<li><a href="clientes.html">parceiros</a></li>
+					<li><a href="contato.html">contatos</a></li>
+				</ul>
+			</nav>
 		</div>
-			<h1> Solução mobile para sua empresa </h1>
 
-	</header>
-
-	<main>
-		<section class="sobre">
-			<div class="container">
-				<div class="textos">	
-						<h1><strong>Nosso foco</strong></h1>
-						<p>Trazer mobilidade para nossos clientes de forma simples, rápida e pratica</p>
-						
-					<div class="itens">	
-								
-						<div class="icone-launcher">
-							<img src="images/Logolauncher.png" alt="Pogo Launcher">
-						</div>
-
-						<div class="icone-forms">
-							<img src="images/LogoForm.png" alt="Pogo Forms">
-						</div>
-
-						<div class="icone-safety">
-							<img src="images/logosafety.png" alt="Pogo Safety">
-						</div>
-
+		<header>
+			<div class="caixa">
+				<div class="container">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo topo">
+						</a>
 					</div>
-					 <a href="#" class="botao medio"> Continue Lendo </a>
-				</div>
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Inicio</a></li>
+								<li><a href="sobre.html">sobre</a></li>
+								<li><a href="clientes.html">parceiros</a></li>
+								<li><a href="contato.html">contatos</a></li>
+							</ul>
+						</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+
+							<ul class="social">
+								<li>
+									<a href="https://www.facebook.com/pogoenterprise/">
+										<img src="images/logo_face.svg" alt="">
+									</a>
+								</li>
+
+							<li>
+								<a href="">
+									<img src="images/logo_insta.svg" alt="">
+								</a>
+
+							</li>
+						</ul>
+					</div>
+				</div>	
 			</div>
-		</section>
-	</main>
+				<h1> Solução mobile para sua empresa </h1>
+		</header>
 
-	<footer>
-		<div class="logo">
-			<a href="index.html">
-				<img src="images/logosolo.png" alt="logo final">
-			</a>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="textos">	
+							<h1><strong>Nosso foco</strong></h1>
+							<p>Trazer mobilidade para nossos clientes de forma simples, rápida e pratica</p>
+							
+						<div class="itens">	
+									
+							<div class="icone-launcher">
+								<img src="images/Logolauncher.png" alt="Pogo Launcher">
+							</div>
 
-			<p> 2018 Todos os Direitos Reservados</p>
-		</div>
-	</footer>
+							<div class="icone-forms">
+								<img src="images/LogoForm.png" alt="Pogo Forms">
+							</div>
+
+							<div class="icone-safety">
+								<img src="images/logosafety.png" alt="Pogo Safety">
+							</div>
+
+						</div>
+						 <a href="sobre.html" class="botao medio"> Saiba mais sobre nós </a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logosolo.png" alt="logo final">
+				</a>
+
+				<p> 2018 Todos os Direitos Reservados</p>
+			</div>
+		</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$(".toggle").click(function(){
+				$(".layout").toggleClass("ativo");
+				$(".menu-responsivo").toggleClass("ativo");
+				$(this).toggleClass("ativo");
+			});
+		});
+	</script>
+
 </body>
 </html>
