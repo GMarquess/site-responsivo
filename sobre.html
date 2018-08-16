@@ -7,74 +7,117 @@
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/sobre.css">
 	<link rel="stylesheet" href="css/pluggins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">	
 </head>
-<body>
-	<header>
-		<div class="caixa">
-			<div class="container">				
-				<div class="logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="logo topo">
-					</a>
-				</div>
-				<div class="links">
-					<nav>
-						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="sobre.html">sobre</a></li>
-							<li><a href="clientes.html">parceiros</a></li>
-							<li><a href="contato.hmtl">contatos</a></li>
-						</ul>
-					</nav>
-						<ul class="social">
+<body class="geral">		
+		<header>
+			<div class="caixa wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">
+				<div class="container">				
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo topo">
+						</a>
+					</div>
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Inicio</a></li>
+								<li><a href="sobre.html">sobre</a></li>
+								<li><a href="clientes.html">parceiros</a></li>
+								<li><a href="contato.hmtl">contatos</a></li>
+							</ul>
+						</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+
+							<ul class="social">
+								<li>
+									<a href="https://www.facebook.com/pogoenterprise/">
+										<img src="images/logo_face.svg" alt="">
+									</a>
+								</li>
+
 							<li>
-								<a href="https://www.facebook.com/pogoenterprise/">
-									<img src="images/logo_face.svg" alt="">
+								<a href="">
+									<img src="images/logo_insta.svg" alt="">
 								</a>
 							</li>
-
-						<li>
-							<a href="">
-								<img src="images/logo_insta.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>	
-		</div>
-			<h1> Um Pouco Sobre nós </h1>
-
-	</header>
-
-	<main>
-		<section class="sobre">
-			<div class="container">
-				<div class="textos">	
-						
-						<h2><strong>quem somos ?</strong></h2>
-						<p>atuamos no mercado de mobilidade desde 2008, vizando trazer praticidade para as corporações integrarem seus processos e negócios ao mundo mobile.</p>
-
-						<h2><strong> Nossa Missão </strong></h2>
-						<p>é garantir a geração de valor e satisfações com os nossos clientes, tornando-nos seu parceiro preferido para a implantação de soluções ionovadoras de negócios voltadas á processos empresariais</p>
-						
-						<h2><strong> Visão </strong></h2>
-						<p> garantir o futuro de qualquer negócio, independente do seu porte, idade ou areá de atuação. negócios de sucesso são aqueles capazes de harmonizar seuas estratégias corporativas, implementando as ações necessarias com eficiência. nós iremos auxiliar nossos clientes a enxergar oportunidades para agregar valores ao seu negócio, superando suas expectativas.</p>
-
-
-					 <a href="clientes.html" class="botao grande"> conheça nossos parceiros </a>
-				</div>
+						</ul>
+					</div>
+				</div>	
 			</div>
-		</section>
-	</main>
+			<div class="layout">
+				<nav class="menu-responsivo">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobre.html">sobre</a></li>
+						<li><a href="clientes.html">parceiros</a></li>
+						<li><a href="contato.html">contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+				<h1 class="wow swing" data-wow-duration="3s" data-wow-delay=".3s"> Um Pouco Sobre nós </h1>
 
-	<footer>
-		<div class="logo">
-			<a href="index.html">
-				<img src="images/logosolo.png" alt="logo final">
-			</a>
+		</header>
 
-			<p> 2018 Todos os Direitos Reservados</p>
-		</div>
-	</footer>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="textos">	
+							
+							<h2 class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.5s"> 
+							<strong>quem somos ?</strong> </h2>
+							
+							<p class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.5s"> atuamos no mercado de mobilidade desde 2008, vizando trazer praticidade para as corporações integrarem seus processos e negócios ao mundo mobile. </p>
+
+							<h2 class="wow bounceInRight" data-wow-duration="2s" data-wow-offset="100" data-wow-delay="0.5s"> <strong> Nossa Missão </strong> </h2>
+							
+							<p class="wow bounceInRight" data-wow-duration="2s" data-wow-offset="100" data-wow-delay="0.5s"> é garantir a geração de valor e satisfações com os nossos clientes, tornando-nos seu parceiro preferido para a implantação de soluções ionovadoras de negócios voltadas á processos empresariais </p>
+							
+							<h2 class="wow bounceInLeft" data-wow-duration="2s" data-wow-offset="125" data-wow-delay="0.5s"> <strong> Visão </strong> </h2>
+							
+							<p class="wow bounceInLeft" data-wow-duration="2s" data-wow-offset="125" data-wow-delay="0.5s"> garantir o futuro de qualquer negócio, independente do seu porte, idade ou areá de atuação. negócios de sucesso são aqueles capazes de harmonizar seuas estratégias corporativas, implementando as ações necessarias com eficiência. nós iremos auxiliar nossos clientes a enxergar oportunidades para agregar valores ao seu negócio, superando suas expectativas. </p>
+
+
+						 <a href="clientes.html" class="botao grande"> conheça nossos parceiros </a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logosolo.png" alt="logo final">
+				</a>
+
+				<p> 2018 Todos os Direitos Reservados</p>
+			</div>
+		</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function(){
+			$(".toggle").click(function(){
+				$(".layout").toggleClass("ativo");
+				$(".menu-responsivo").toggleClass("ativo");
+				$(this).toggleClass("ativo");
+				$("body").toggleClass("ativo");
+			});
+          wow = new WOW({ 
+
+          mobile: false,            
+        })
+       
+       wow.init();
+		});
+	
+	</script>
+
 </body>
 </html>

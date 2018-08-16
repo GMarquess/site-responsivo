@@ -7,21 +7,12 @@
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/clientes.css">
 	<link rel="stylesheet" href="css/pluggins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 </head>
-<body>
-		<div class="layout">
-			<nav class="menu-responsivo">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="sobre.html">sobre</a></li>
-					<li><a href="clientes.html">parceiros</a></li>
-					<li><a href="contato.html">contatos</a></li>
-				</ul>
-			</nav>
-		</div>
+<body class="geral">
 
 		<header>
-			<div class="caixa">
+			<div class="caixa wow fadeIn" data-wow-duration="1,5s" data-wow-delay="0.1s">
 				<div class="container">				
 					<div class="logo">
 						<a href="index.html">
@@ -60,7 +51,17 @@
 					</div>
 				</div>	
 			</div>
-				<h1> conheça nossos parceiros </h1>
+			<div class="layout">
+				<nav class="menu-responsivo">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobre.html">sobre</a></li>
+						<li><a href="clientes.html">parceiros</a></li>
+						<li><a href="contato.html">contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+				<h1> conheça alguns de nossos parceiros </h1>
 
 		</header>
 
@@ -180,14 +181,23 @@
 		</footer>
 	
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){
 			$(".toggle").click(function(){
 				$(".layout").toggleClass("ativo");
 				$(".menu-responsivo").toggleClass("ativo");
 				$(this).toggleClass("ativo");
+				$("body").toggleClass("ativo");
 			});
+          wow = new WOW({ 
+
+          mobile: false,            
+        })
+       
+       wow.init();
 		});
+	
 	</script>
 
 </body>

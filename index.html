@@ -7,29 +7,24 @@
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/pluggins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 </head>
-<body>
-		<div class="layout">
-			<nav class="menu-responsivo">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="sobre.html">sobre</a></li>
-					<li><a href="clientes.html">parceiros</a></li>
-					<li><a href="contato.html">contatos</a></li>
-				</ul>
-			</nav>
-		</div>
+<body class="geral">
 
 		<header>
-			<div class="caixa">
+			<div class="caixa wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+
 				<div class="container">
-					<div class="logo">
+
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						
 						<a href="index.html">
 							<img src="images/logo.png" alt="logo topo">
 						</a>
 					</div>
+					
 					<div class="links">
-						<nav>
+						<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
 							<ul>
 								<li><a href="index.html">Inicio</a></li>
 								<li><a href="sobre.html">sobre</a></li>
@@ -44,7 +39,7 @@
 							<span></span>
 						</a>
 
-							<ul class="social">
+							<ul class="social wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5">
 								<li>
 									<a href="https://www.facebook.com/pogoenterprise/">
 										<img src="images/logo_face.svg" alt="">
@@ -61,28 +56,45 @@
 					</div>
 				</div>	
 			</div>
-				<h1> Solução mobile para sua empresa </h1>
+
+				<div class="layout">
+					<nav class="menu-responsivo">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="sobre.html">sobre</a></li>
+							<li><a href="clientes.html">parceiros</a></li>
+							<li><a href="contato.html">contatos</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<h1 class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s"> 
+					Solução mobile para sua empresa
+				</h1>
 		</header>
 
 		<main>
 			<section class="sobre">
 				<div class="container">
 					<div class="textos">	
-							<h1><strong>Nosso foco</strong></h1>
-							<p>Trazer mobilidade para nossos clientes de forma simples, rápida e pratica</p>
+							<h1 class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="1.3s"><strong>Nosso foco</strong></h1>
+							<p class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".3s">Trazer mobilidade para nossos clientes de forma simples, rápida e pratica</p>
 							
 						<div class="itens">	
 									
-							<div class="icone-launcher">
+							<div class="icone-launcher wow rotateIn" data-wow-duration="2s" data-wow-offset="150" data-wow-delay=".5">
 								<img src="images/Logolauncher.png" alt="Pogo Launcher">
+								<p> pogolauncher </p>
 							</div>
 
-							<div class="icone-forms">
+							<div class="icone-forms wow rotateIn" data-wow-duration="2s" data-wow-offset="150" data-wow-delay=".7s">
 								<img src="images/LogoForm.png" alt="Pogo Forms">
+								<p> pogoforms </p>
 							</div>
 
-							<div class="icone-safety">
+							<div class="icone-safety wow rotateIn" data-wow-duration="2s" data-wow-offset="150" data-wow-delay=".9s">
 								<img src="images/logosafety.png" alt="Pogo Safety">
+								<p> pogosafety </p>
 							</div>
 
 						</div>
@@ -103,14 +115,23 @@
 		</footer>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){
 			$(".toggle").click(function(){
 				$(".layout").toggleClass("ativo");
 				$(".menu-responsivo").toggleClass("ativo");
 				$(this).toggleClass("ativo");
+				$("body").toggleClass("ativo");
 			});
+          wow = new WOW({ 
+
+          mobile: false,            
+        })
+       
+       wow.init();
 		});
+	
 	</script>
 
 </body>

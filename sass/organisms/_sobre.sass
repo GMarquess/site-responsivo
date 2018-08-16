@@ -18,6 +18,7 @@ section.sobre
 			+border-radius(120px)
 			line-height: 85px
 			color: $preto
+			
 			img
 				display: block
 				margin: 20px auto
@@ -26,7 +27,6 @@ section.sobre
 					width: auto
 					height: 75px
 					line-height: 75px
-
 
 			+breakpoint($tablet)
 				border: 0px 
@@ -37,6 +37,12 @@ section.sobre
 				+font-size(50px)
 				margin: 0 5px
 
+			p
+				+breakpoint($tablet)
+					+font-size(0px)
+				+breakpoint($celular)
+					+font-size(0px)
+
 			&.icone-launcher
 				+order(1)
 
@@ -46,5 +52,13 @@ section.sobre
 			&.icone-safety
 				+order(3)
 
+	.botao
+		display: table
+		margin: 280px auto 80px
+
+		+breakpoint($tablet)
+			margin: 0px auto
+		+breakpoint($celular)
+			margin: 0px auto
 
  

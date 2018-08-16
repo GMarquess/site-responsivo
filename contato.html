@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/contato.css">
 	<link rel="stylesheet" href="css/pluggins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 </head>
-<body>
+<body class="geral">
 	<header>
 		<div class="caixa">
 			<div class="container">				
@@ -26,6 +27,13 @@
 							<li><a href="contato.html">contatos</a></li>
 						</ul>
 					</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+
 						<ul class="social">
 							<li>
 								<a href="https://www.facebook.com/pogoenterprise/">
@@ -43,6 +51,18 @@
 			</div>	
 		</div>
 
+		<div class="layout">
+			<nav class="menu-responsivo">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="sobre.html">sobre</a></li>
+					<li><a href="clientes.html">parceiros</a></li>
+					<li><a href="contato.html">contatos</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<h1 class="wow bounce" data-wow-duration="5s" data-wow-delay="1.3s" data-wow-iteration="2"> Entre em contato conosco para transformar a sua empresa </h1>
 	</header>
 
 	<main>
@@ -101,5 +121,25 @@
 			<p> 2018 Todos os Direitos Reservados</p>
 		</div>
 	</footer>
+	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function(){
+			$(".toggle").click(function(){
+				$(".layout").toggleClass("ativo");
+				$(".menu-responsivo").toggleClass("ativo");
+				$(this).toggleClass("ativo");
+				$("body").toggleClass("ativo");
+			});
+          wow = new WOW({ 
+
+          mobile: false,            
+        })
+       
+       wow.init();
+		});
+	
+	</script>
 </body>
 </html>

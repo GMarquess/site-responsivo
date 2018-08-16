@@ -1,16 +1,19 @@
-body
+.geral
 	position: relative
+	&.ativo
+		position: fixed
 
 .menu-responsivo
 	position: fixed
 	width: 100%
-	height: 210px
+	height: 204px
 	left: 0
-	top: -220px
-	+transition(.2s)
+	top: 80px
+	display: none
+	background-color: $branco
 	&.ativo
-		top: 0
-	
+		display: block
+
 
 	ul 
 		li
